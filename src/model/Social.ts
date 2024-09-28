@@ -57,5 +57,5 @@ export const DISCORD: SocialModel = {
   thumbnail: PFP_1_IMAGE,
   title: 'Discrod',
   handler: '@gryfder',
-  href: 'http://discordapp.com/users/gryfder',
+  href: 'https://discordapp.com/users/530395478819602482',
 };
