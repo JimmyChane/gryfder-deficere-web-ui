@@ -1,7 +1,9 @@
-import YOUTUBE_ICON from '@/assets/icon/youtube-color.svg';
-import TELEGRAM_ICON from '@/assets/icon/telegram-color.svg';
-import TWITTER_ICON from '@/assets/icon/twitter-color.svg';
-import DISCORD_ICON from '@/assets/icon/discord-color.svg';
+import YOUTUBE_ICON from '@/assets/icon/social/youtube-color.svg';
+import TELEGRAM_ICON from '@/assets/icon/social/telegram-color.svg';
+import TWITTER_ICON from '@/assets/icon/social/twitter-color.svg';
+import DISCORD_ICON from '@/assets/icon/social/discord-color.svg';
+import INSTAGRAM_ICON from '@/assets/icon/social/instagram-color.png';
+import BLUESKY_ICON from '@/assets/icon/social/bluesky-color.svg';
 
 import PFP_1_IMAGE from '@/assets/img/pfp.webp';
 import PFP_2_IMAGE from '@/assets/img/pfp-2.webp';
@@ -20,40 +22,40 @@ export const YOUTUBE: SocialModel = {
   thumbnail: PFP_2_IMAGE,
   title: 'Youtube',
   handler: '@Gryfder',
-  href: '',
+  href: 'https://www.youtube.com/@Gryfder',
 };
 export const TELEGRAM: SocialModel = {
   icon: TELEGRAM_ICON,
   thumbnail: PFP_1_IMAGE,
   title: 'Telegram',
   handler: '@Gryfder',
-  href: '',
+  href: 'http://t.me/Gryfder',
 };
 export const INSTAGRAM: SocialModel = {
-  icon: '',
+  icon: INSTAGRAM_ICON,
   thumbnail: PFP_1_IMAGE,
   title: 'Instagram',
   handler: '@gryfderaven',
-  href: '',
+  href: 'https://www.instagram.com/gryfderaven',
 };
 export const BLUESKY: SocialModel = {
-  icon: '',
+  icon: BLUESKY_ICON,
   thumbnail: PFP_2_IMAGE,
   title: 'Bluesky',
   handler: '@gryfder.bsky.social',
-  href: '',
+  href: 'http://bsky.app/profile/gryfder.bsky.social',
 };
 export const TWITTER: SocialModel = {
   icon: TWITTER_ICON,
   thumbnail: PFP_3_IMAGE,
   title: 'Twitter',
   handler: '@gryfder',
-  href: '',
+  href: 'https://x.com/gryfder',
 };
 export const DISCORD: SocialModel = {
   icon: DISCORD_ICON,
   thumbnail: PFP_1_IMAGE,
   title: 'Discrod',
   handler: '@gryfder',
-  href: '',
+  href: 'http://discordapp.com/users/gryfder',
 };

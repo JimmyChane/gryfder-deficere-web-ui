@@ -5,20 +5,24 @@ defineProps<{ item: SocialModel }>();
 </script>
 
 <template>
-  <button class="card-social">
+  <a class="card-social" :href="item.href" target="_blank">
     <img :src="item.thumbnail" />
     <div>
-      <img :src="item.icon" />
       <div>
-        <span>{{ item.title }}</span>
-        <span>{{ item.handler }}</span>
+        <img :src="item.icon" />
+        <div>
+          <span>{{ item.title }}</span>
+          <span>{{ item.handler }}</span>
+        </div>
       </div>
     </div>
-  </button>
+  </a>
 </template>
 
 <style lang="scss" scoped>
 .card-social {
+  font-size: 0.8rem;
+
   position: relative;
   border-radius: 1rem;
   overflow: hidden;
@@ -33,32 +37,40 @@ defineProps<{ item: SocialModel }>();
     object-fit: cover;
   }
   & > div {
-    width: 100%;
-    padding: 1rem;
-    gap: 0.5rem;
-
     position: absolute;
     bottom: 0;
-
     z-index: 1;
 
+    width: 100%;
+
+    min-height: 60%;
+
     display: flex;
-    align-items: center;
-    justify-content: flex-start;
+    align-items: flex-end;
 
     background-image: linear-gradient(to top, black, transparent);
 
-    & > img {
-      width: 3em;
-      height: 3em;
-    }
     & > div {
-      display: flex;
-      flex-direction: column;
+      width: 100%;
+      padding: 1rem;
+      gap: 0.5rem;
 
-      & > span:last-child {
-        font-size: 1.2em;
-        font-weight: bold;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+
+      & > img {
+        width: 3em;
+        height: 3em;
+      }
+      & > div {
+        display: flex;
+        flex-direction: column;
+
+        & > span:last-child {
+          font-size: 1.2em;
+          font-weight: bold;
+        }
       }
     }
   }

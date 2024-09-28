@@ -1,14 +1,12 @@
 #app {
-  --background-color: #5fadf5;
+  --color-background: #5fadf5;
   --actionbar-height: 4.5rem;
-  --content-max-width: 80rem;
 
   width: 100vw;
   height: 100dvh;
-  color: #ffffffaa;
-  color: hsla(0, 0%, 100%, 0.8);
+  color: white;
 
-  background: var(--background-color);
+  background: var(--color-background);
 
   display: flex;
   flex-direction: column;
