@@ -9,14 +9,11 @@ const appBodyScrollTop = ref(0);
 
 const routeName = computed(() => route.name);
 
-function onScroll(e: Event): void {
-  const target = e.target as HTMLDivElement;
-  appBodyScrollTop.value = target.scrollTop ?? 0;
+function onScroll(): void {
+  appBodyScrollTop.value = refAppBody.value?.scrollTop ?? 0;
 }
 
-watch(routeName, () => {
-  refAppBody.value?.scrollTo({ top: 0 });
-});
+watch(routeName, () => refAppBody.value?.scrollTo({ top: 0 }));
 </script>
 
 <template>
